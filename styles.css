@@ -1,0 +1,97 @@
+/* Importation de la police Minecraft */
+@font-face {
+    font-family: 'Minecraft';
+    src: url('medias/Minecraft.ttf') format('truetype'); /* Chemin vers la police */
+}
+
+body {
+    background-image: url('medias/dirt.webp'); /* Chemin vers l'image de texture */
+    background-size: 50px 50px; /* Ajuste la taille pour répéter l'image en petits blocs */
+    background-repeat: repeat; /* Répète l'image pour couvrir tout le fond */
+    font-family: 'Minecraft', sans-serif;
+    color: #EAEAEA; /* Texte clair pour le contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Minecraft', sans-serif;
+    color: #5CAD56; /* Vert inspiré de l'herbe */
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ombre pour profondeur */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #EAEAEA; /* Texte en clair */
+    margin: 20px;
+}
+
+/* Style des liens */
+a {
+    color: #5CAD56;
+    text-decoration: none;
+    border-bottom: 2px solid #5CAD56;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+}
+
+/* Style pour les boutons "Précédent" et "Suivant" */
+button {
+    font-family: 'Minecraft', sans-serif;
+    background: linear-gradient(45deg, #5CAD56, #6DBF6B); /* Dégradé pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour effet de flottement */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #4A9C45, #497D47); /* Dégradé au survol */
+    transition: ease 2s;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(58, 58, 58, 0.8); /* Fond semi-transparent */
+    border: 5px solid #5CAD56;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.theme-toggle:hover {
+    background: linear-gradient(45deg, #4A9C45, #497D47); /* Dégradé au survol */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
